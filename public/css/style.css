@@ -76,6 +76,9 @@ canvas {
   padding: 30px;
   margin-bottom: 50px;
 
+  -webkit-backdrop-filter: grayscale(80%) blur(5px);
+  backdrop-filter: grayscale(80%) blur(5px);
+
   border-bottom: 3px solid var(--text-color);
 
   /* scrollbar styles */
