@@ -152,7 +152,7 @@ span.nom::after {
 
   /* TODO Remplacer la couleur par une version transparente de --text-color */
   /* A faire avec SASS */
-  box-shadow: rgba(255, 255, 255, 0.3) 5px 5px 5px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 5px 5px;
 }
 
 #left_btn {
