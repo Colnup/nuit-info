@@ -113,4 +113,4 @@ function changeCanvas(intensity, blurSpeed) {
   });
 }
 
-let animation = setInterval(changeCanvas, 10, 2, 1);
+let animation = setInterval(changeCanvas, 10, 0.3, 0.1);
