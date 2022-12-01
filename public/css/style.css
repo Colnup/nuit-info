@@ -12,7 +12,7 @@
 }
 
 html {
-  --text-color: #f5f5f5;
+  --text-color: #ddd;
   --background-color: #1a1a1a;
 
   /* --primary-color: #d20058; */
@@ -177,17 +177,19 @@ span.nom::after {
   width: 50px;
   height: 50px;
   position: absolute;
-  border-radius: 15px;
   -webkit-filter: invert(1);
   filter: invert(1);
 }
 
 #keyboard_left_arrow {
   bottom: 0;
-  left: 0;
+  left: -1px; /* To hide the border */
+
+  border-bottom-left-radius: 15px;
 }
 
 #keyboard_right_arrow {
   bottom: 0;
-  right: 0;
+  right: -1px; /* To hide the border */
+  border-bottom-right-radius: 15px;
 }
