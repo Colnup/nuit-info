@@ -1,20 +1,46 @@
 let anim;
 
+let npc = {}
+
+
+fetch('api/name/female')
+.then((response) => response.json())
+.then((json) => console.log(json));
+
+initNameNPC();
+
 // Fonction récup user (PNJ)
 
 /**
  * 
- * @param {String} name Nom du personnage non joueur
+ * @param {String} name ID du personnage non joueur
  * 
  * @returns {JSON} renvoie les données du PNJ
  */
-function getUser(name, callback){
+function getUser(id, callback){
     fetch('data/data.json')
         .then((response) => response.json())
-        .then((json) => callback(json['user'][name]['color']));
+        .then((json) => callback(json['npc'][id]['color']));
 }
 
 
+function getMessage(id, callback){
+    fetch('data/data.json')
+        .then((response) => response.json())
+        .then((json) => callback(json['path'][id]));
+}
+
+function initNameNPC(){
+    fetch('data/data.json')
+        .then((response)=>response.json())
+        .then((json)=>{
+            let data = json['npc'];
+            console.log(data)
+            data.forEach(element => {
+               console.log(element) 
+            });
+        })
+}
 
 // Fonction chat (avec animation)
 
@@ -71,3 +97,7 @@ function animateHideMenu(element){
     }
 
 }
+
+getMessage(1, function(json){
+    console.log(json)
+})
