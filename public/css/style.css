@@ -15,7 +15,8 @@ html {
   --text-color: #f5f5f5;
   --background-color: #1a1a1a;
 
-  --primary-color: #d20058;
+  /* --primary-color: #d20058; */
+  /* unused ↑ */
 
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -66,23 +67,43 @@ canvas {
 }
 
 #msg_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  height: 500px;
+  overflow-y: scroll;
+
+  padding: 30px;
+  margin-bottom: 50px;
+
+  border-bottom: 3px solid var(--text-color);
+
+  /* scrollbar styles */
+  scrollbar-color: var(--text-color) var(--background-color);
+  scrollbar-width: thin;
 }
 
 .msg {
   color: var(--text-color);
 
+  position: relative;
+
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+
+  max-width: 500px;
 }
 
 msg > * {
   margin: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 30px;
 }
 
 .avatar {
@@ -95,6 +116,7 @@ msg > * {
 span.nom {
   color: crimson;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 span.nom::after {
   content: " :";
@@ -111,12 +133,12 @@ span.nom::after {
 }
 
 .answer_button {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
 
   color: var(--text-color);
   border: currentColor solid 2px;
-  border-radius: 15px;
+  border-radius: 15px 15px 15px 15px;
 
   /* Align text center */
   text-align: center;
@@ -129,16 +151,32 @@ span.nom::after {
   position: relative;
 
   /* TODO Remplacer la couleur par une version transparente de --text-color */
-  box-shadow: rgba(255, 255, 255, 0.3) 5px 5px 5px;
+  /* A faire avec SASS */
+  box-shadow: rgba(255, 255, 255, 0.3) 0 5px 5px;
 }
 
+#left_btn {
+  /* border radius on the top left and bottom left */
+  border-radius: 15px 0 0 15px;
+}
+
+#right_btn {
+  /* border radius on the top right and bottom right */
+  border-radius: 0 15px 15px 0;
+}
+
+.answer_button:active {
+  box-shadow: inset rgba(255, 255, 255, 0.3) 5px 5px 5px;
+}
+
+/* Arrows inside the buttons */
 .keyboard_arrows {
   width: 50px;
   height: 50px;
   position: absolute;
   border-radius: 15px;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 #keyboard_left_arrow {
