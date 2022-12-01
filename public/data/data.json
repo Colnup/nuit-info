@@ -1,7 +1,59 @@
 {
-    "npc":{
+    "npc":[
+        {
+            "color": "#9ab560",
+            "gender": "Female"
+        },
+        {
+            "color": "#3297a8",
+            "gender": "Male"
+        }
+    ],
+    "path":{
         "1":{
-            "color": "#9ab560"
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Oui",
+                    "to":"2"
+                },
+                "2":{
+                    "message": "Non",
+                    "to":"3"
+                }
+            }
+        },
+        "2":{
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Oui",
+                    "to":"2"
+                },
+                "2":{
+                    "message": "Non",
+                    "to":"3"
+                }
+            }
+        },
+        "3":{
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Oui",
+                    "to":"2"
+                },
+                "2":{
+                    "message": "Non",
+                    "to":"3"
+                }
+            }
         }
     }
 }
