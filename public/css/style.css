@@ -64,26 +64,27 @@ canvas {
 /* GAME STYLES */
 
 #game_container {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
 }
 
 #msg_container {
   display: grid;
   grid-template-columns: 1fr;
 
-  height: 500px;
   overflow-y: scroll;
 
   padding: 30px;
   margin-bottom: 50px;
+  border-radius: 15px;
 
   -webkit-backdrop-filter: grayscale(80%) blur(5px);
   backdrop-filter: grayscale(80%) blur(5px);
 
   border-bottom: 3px solid var(--text-color);
 
-  /* scrollbar styles */
-  scrollbar-color: var(--text-color) var(--background-color);
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .msg {
@@ -96,6 +97,10 @@ canvas {
   margin-bottom: 50px;
 
   max-width: 500px;
+}
+
+.msg:last-child {
+  margin-bottom: 0;
 }
 
 msg > * {
@@ -119,13 +124,15 @@ msg > * {
 span.nom {
   color: crimson;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 span.nom::after {
   content: " :";
   display: inline;
 }
-
+.content p {
+  font-size: 0.8rem;
+}
 /* Buttons styles */
 
 #buttons {
