@@ -1,0 +1,152 @@
+/* Css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  --text-color: #f5f5f5;
+  --background-color: #1a1a1a;
+
+  --primary-color: #d20058;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Body style */
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px 15vw;
+}
+
+/* Background canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* button */
+#start-button {
+  width: 500px;
+  height: 250px;
+
+  color: var(--text-color);
+  border: currentColor solid 2px;
+  border-radius: 15px;
+
+  /* Align text center */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* GAME STYLES */
+
+#game_container {
+}
+
+#msg_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: yellow;
+}
+
+.msg {
+  color: var(--text-color);
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+msg > * {
+  margin: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+span.nom {
+  color: crimson;
+  font-weight: bold;
+}
+span.nom::after {
+  content: " :";
+  display: inline;
+}
+
+/* Buttons styles */
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+
+  /* background-color: aqua; */
+}
+
+.answer_button {
+  width: 200px;
+  height: 100px;
+
+  color: var(--text-color);
+  border: currentColor solid 2px;
+  border-radius: 15px;
+
+  /* Align text center */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  cursor: pointer;
+
+  position: relative;
+
+  /* TODO Remplacer la couleur par une version transparente de --text-color */
+  box-shadow: rgba(255, 255, 255, 0.3) 5px 5px 5px;
+}
+
+.keyboard_arrows {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 15px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#keyboard_left_arrow {
+  bottom: 0;
+  left: 0;
+}
+
+#keyboard_right_arrow {
+  bottom: 0;
+  right: 0;
+}
