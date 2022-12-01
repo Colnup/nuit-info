@@ -3,9 +3,7 @@ let anim;
 let npc = {}
 
 
-fetch('api/name/female')
-.then((response) => response.json())
-.then((json) => console.log(json));
+
 
 initNameNPC();
 
@@ -36,9 +34,18 @@ function initNameNPC(){
         .then((json)=>{
             let data = json['npc'];
             console.log(data)
-            data.forEach(element => {
-               console.log(element) 
+            data.forEach((element, index) => {
+                if(element['gender'] === "Male"){
+                    fetch('api/name/male')
+                        .then((response) => response.json())
+                        .then((json) => npc[index] = json['name']);
+                } else {
+                    fetch('api/name/female')
+                        .then((response) => response.json())
+                        .then((json) => npc[index] = json['name']);
+                }
             });
+
         })
 }
 
@@ -50,7 +57,7 @@ function initNameNPC(){
  * @param {String} author Auteur du message (voir sendAction pour les actions)
  * @param {String} message Message à envoyé
  */
-function sendMessage(waitTime){
+function sendMessage(waitTime, author, message){
 
     
 
@@ -71,10 +78,6 @@ function closeMenu(){
     anim = setInterval(animateHideMenu, 40, menuContainer);
 
 }
-
-
-
-
 
 
 

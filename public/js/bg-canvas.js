@@ -72,11 +72,11 @@ while (count--) {
   });
 }
 
-function changeCanvas(timestamp) {
+function changeCanvas(intensity, blurSpeed) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  let adjX = 2;
-  let adjY = 2;
-  let adjBlur = 1;
+  let adjX = intensity;
+  let adjY = intensity;
+  let adjBlur = blurSpeed;
   items.forEach(function (item) {
     if (
       (item.x + item.initialXDirection * adjX >= canvas.width && item.initialXDirection !== 0) ||
@@ -111,7 +111,6 @@ function changeCanvas(timestamp) {
     ctx.fill();
     ctx.closePath();
   });
-  window.requestAnimationFrame(changeCanvas);
 }
 
-window.requestAnimationFrame(changeCanvas);
+let animation = setInterval(changeCanvas, 10, 2, 1);
