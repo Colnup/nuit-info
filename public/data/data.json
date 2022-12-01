@@ -46,14 +46,15 @@
             "time": "1",
             "choix":{
                 "1": {
-                    "message": "Oui",
-                    "to":"2"
+                    "message": "Continuer",
+                    "to":"5"
                 },
                 "2":{
-                    "message": "Non",
+                    "message": "Continuer",
                     "to":"3"
                 }
             }
         }
+        
     }
 }
