@@ -9,6 +9,8 @@
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
+
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 html {
@@ -32,7 +34,7 @@ body {
   justify-content: space-around;
   align-items: center;
 
-  padding: 10px 15vw;
+  padding-top: 25px;
 }
 
 /* Background canvas */
@@ -207,4 +209,18 @@ span.nom {
   bottom: 0;
   right: -1px; /* To hide the border */
   border-bottom-right-radius: 15px;
+}
+
+/* END SCREEN */
+
+#end_container {
+  margin-top: 20px;
+  width: 70vw;
+  /* height: 100%; */
+  background-color: greenyellow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
