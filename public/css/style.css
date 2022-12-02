@@ -27,7 +27,6 @@ html {
 /* Body style */
 body {
   min-height: 100vh;
-  width: 100vw;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -214,13 +213,15 @@ span.nom {
 /* END SCREEN */
 
 #end_container {
-  margin-top: 20px;
-  width: 70vw;
-  /* height: 100%; */
-  background-color: greenyellow;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* display: none; */
+
+  margin-top: 20px;
+  width: 70vw;
+  height: 100vh;
+  background-color: greenyellow;
 }
