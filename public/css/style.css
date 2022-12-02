@@ -74,7 +74,10 @@ canvas {
   display: grid;
   grid-template-columns: 1fr;
 
-  overflow-y: scroll; 
+  /* align on the bottom */
+  align-items: flex-end;
+
+  overflow-y: scroll;
 
   height: 90vh;
   padding: 30px;
