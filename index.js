@@ -24,7 +24,7 @@ app.get('/api/def/vih', async function(req, res){
     const { Configuration, OpenAIApi } = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
     });
     const openai = new OpenAIApi(configuration);
 
@@ -44,7 +44,7 @@ app.get('/api/def/sida', async function(req, res){
     const { Configuration, OpenAIApi } = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
     });
     const openai = new OpenAIApi(configuration);
 
@@ -60,31 +60,11 @@ app.get('/api/def/sida', async function(req, res){
     console.log()
     res.send({"def": response.data.choices[0].text.replaceAll('\n', "")})
 })
-app.get('/api/def/vih', async function(req, res){
-    const { Configuration, OpenAIApi } = require("openai");
-
-    const configuration = new Configuration({
-    apiKey: "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",
-    });
-    const openai = new OpenAIApi(configuration);
-
-    const response = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt: "donne moi une très courte description de SIDA",
-    temperature: 0,
-    max_tokens: 100,
-    top_p: 1,
-    frequency_penalty: 0.2,
-    presence_penalty: 0,
-    });
-    console.log()
-    res.send({"def": response.data.choices[0].text.replaceAll('\n', "")})
-})
 app.get('/api/def/ist', async function(req, res){
     const { Configuration, OpenAIApi } = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
     });
     const openai = new OpenAIApi(configuration);
 
