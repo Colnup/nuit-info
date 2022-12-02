@@ -104,7 +104,7 @@ function sendMessage(json){
         content_text.textContent = json['message']? json['message'] : "[ERREUR DANS LE MESSAGE | VERIFIER LE MESSAGE DANS LES DONNEES!]";
     } else {
         // C'est un personnage
-        message_image.src = "";
+        message_image.src = "../data/img/avatars/" + json['by'];
         message_image.alt = "Image";
 
         let by = json['by']
