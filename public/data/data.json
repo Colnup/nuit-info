@@ -11,50 +11,1061 @@
     ],
     "path":{
         "1":{
-            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula. (nom)",
-            "by":"0",
-            "time": "1",
-            "choix":{
-                "1": {
-                    "message": "Oui",
-                    "to":"2"
-                },
-                "2":{
-                    "message": "Non",
-                    "to":"3"
-                }
-            }
-        },
-        "2":{
-            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
-            "by":"1",
-            "time": "1",
-            "choix":{
-                "1": {
-                    "message": "Oui",
-                    "to":"2"
-                },
-                "2":{
-                    "message": "Non",
-                    "to":"3"
-                }
-            }
-        },
-        "3":{
-            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
+            "message": "Tu te retrouves dans un bar après que tes amis aient forcés pour que tu viennes, tandis que ces derniers partent sur la piste de danse un inconnu te fait une tape derrière l’épaule",
             "by":"narrator",
             "time": "1",
             "choix":{
                 "1": {
                     "message": "Continuer",
-                    "to":"1"
+                    "to":"2"
                 },
                 "2":{
                     "message": "Continuer",
-                    "to":"3"
+                    "to":"2"
                 }
             }
+        },
+        "2":{
+            "message": "Bonsoir, désolé de te déranger mais je me demandais si tu étais un homme ou une femme c’est difficile à distinguer de loin",
+            "by":"0",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Homme",
+                    "to":"2.1"
+                },
+                "2":{
+                    "message": "Femme",
+                    "to":"2.2"
+                }
+            }
+        },
+        "2.2":{
+            "message": "Ah pas de problèmes je suis bel et bien une femme",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1"
+                }
+            }
+        },
+        "2.2.1":{
+            "message": "Ah désolé mais je suis gay, passe une bonne soirée ma soeur",
+            "by":"0",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Demander un shot",
+                    "to":"2.2.1.1"
+                },
+                "2":{
+                    "message": "Ignorer et observer les alentours",
+                    "to":"2.2.1.2"
+                }
+            }
+        },
+        "2.2.1.1":{
+            "message": "Barman vous pouvez me servir un shot de tequila s’il vous plaît ?",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.1"
+                }
+            }
+        },
+        "2.2.1.1.1":{
+            "message": "Bien Sûr ça arrive tout de suite madame",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.2"
+                }
+            }
+        },
+        "2.2.1.1.2":{
+            "message": "Le Barman vous sert un shot tout en maintenant un eye contact avec vous",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.3"
+                }
+            }
+        },
+        "2.2.1.1.3":{
+            "message": "Tenez Madame voici votre shot",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.4"
+                }
+            }
+        },
+        "2.2.1.1.4":{
+            "message": "Vous prenez votre verre et le buvez cul sec",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.5"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.5"
+                }
+            }
+        },
+        "2.2.1.1.5":{
+            "message": "Ah ça fait du bien",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.6"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.6"
+                }
+            }
+        },
+        "2.2.1.1.6":{
+            "message": "Dites madame que fait une magnifique personne telle que vous toute seule dans un endroit pareil ?",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.7"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.7"
+                }
+            }
+        },
+        "2.2.1.1.7":{
+            "message": "Oh mais je ne suis pas seule, mes amis sont sur la piste de danse c’est elles qui m’ont amenées ici",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.8"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.8"
+                }
+            }
+        },
+        "2.2.1.1.8":{
+            "message": "Mais qu’attendez vous pour les rejoindre alors ?",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.9"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.9"
+                }
+            }
+        },
+        "2.2.1.1.9":{
+            "message": "Je n’en ai tout simplement pas envie",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10"
+                }
+            }
+        },
+        "2.2.1.1.10":{
+            "message": "Vous êtes donc seule pour le reste de la soirée ?",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Rentrer dans son jeu",
+                    "to":"2.2.1.1.10.1"
+                },
+                "2":{
+                    "message": "Le repousser",
+                    "to":"2.2.1.1.10.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1":{
+            "message": "Il se pourrait bien selon ce que vous avez à me proposer",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.1":{
+            "message": "Eh bien mon service se fini dans 1h, si ça te dit on pourrait aller à ton appart ? Je suis en plein déménagement donc c’est le bordel chez moi",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.2":{
+            "message": "Oui bien sûr pas de problème",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.3"
+                }
+            }
+        },
+        "2.2.1.1.10.1.3":{
+            "message": "1h passe",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.4"
+                }
+            }
+        },
+        "2.2.1.1.10.1.4":{
+            "message": "Le barman arrive avec un manteau en cuir, une chemise rouge et un jean bleu délavé",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.5"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.5"
+                }
+            }
+        },
+        "2.2.1.1.10.1.5":{
+            "message": "Merci de m’avoir attendu on y va ?",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.6"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.6"
+                }
+            }
+        },
+        "2.2.1.1.10.1.6":{
+            "message": "Oui allons-y suis moi.",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.7"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.7"
+                }
+            }
+        },
+        "2.2.1.1.10.1.7":{
+            "message": "Le barman vous suit jusque chez vous et vous vous installez tout en discutant de vos problèmes",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.8"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.8"
+                }
+            }
+        },
+        "2.2.1.1.10.1.8":{
+            "message": "Ca fait du bien de discuter avec quelqu’un d'intéressant, généralement les femmes qui vienne à ce bar n’ont pas grand chose à raconter",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.9"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.9"
+                }
+            }
+        },
+        "2.2.1.1.10.1.9":{
+            "message": "En même temps je ne voulais pas venir au bar à la base ce sont mes amies qui ont forcés pour m’y amener et elles sont exactement comme les femmes que tu as décrit, elles sont du genre à toujours aller en boite à collecter les coups d’un soir comme les pièces de monnaie, franchement ça m’étonnerai pas qu’elles aient choper une IST",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.10"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.10"
+                }
+            }
+        },
+        "2.2.1.1.10.1.10":{
+            "message": "Ah bah après peut être qu’elles veulent tout simplement se faire plaisir et qu’elles se protègent.",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.11"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.11"
+                }
+            }
+        },
+        "2.2.1.1.10.1.11":{
+            "message": "Oui Possible aussi, en tout cas j’ai vraiment appréciée cette soirée",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.12"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.12"
+                }
+            }
+        },
+        "2.2.1.1.10.1.12":{
+            "message": "Moi aussi j’ai apprécié mais ce serait dommage d’arrêter ça maintenant tu ne penses pas ?",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13":{
+            "message": "Il s’approche de vous et tente de vous embrasser",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Repousser",
+                    "to":"2.2.1.1.10.1.13.1"
+                },
+                "2":{
+                    "message": "Embrasser",
+                    "to":"2.2.1.1.10.1.13.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2":{
+            "message": "Vous embrassez langoureusement l’inconnu tandis qu’il vous caresse tendrement",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.1":{
+            "message": "Et si on continuait ça dans ta chambre ?",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.2":{
+            "message": "Avec plaisir",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.3"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.3":{
+            "message": "Vous l’emmenez dans votre chambre et vous commencez tout les 2 à vous déshabiller",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4":{
+            "message": "J’ai pris des capotes au cas où",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Accepter capote",
+                    "to":"2.2.1.1.10.1.13.2.4.1"
+                },
+                "2":{
+                    "message": "Refuser capote",
+                    "to":"2.2.1.1.10.1.13.2.4.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.2":{
+            "message": "Non ça fera moins de sensations on le fera sans",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.4.2.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.4.2.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.2.1":{
+            "message": "Comme tu le souhaites",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.4.2.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.4.2.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.2.2":{
+            "message": "Vous pratiquez donc l’acte non-protégé et vous finissez la nuit près l’un de l’autre, le lendemain matin il a disparu et vous n’avez plus aucun moyen de le contacter et au bout de quelques semaines vous vous apercevez que vous avez quelques problèmes et que vous commencez à avoir de multiples boutons, vous vous faites diagnostiquez et vous avez la syphilis",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"end.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"end.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.1":{
+            "message": "Bien sûr on est jamais assez prudent",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4.1.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4.1.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.1.1":{
+            "message": "T’as bien raison",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4.1.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.2.4.1.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.2.4.1.2":{
+            "message": "Vous pratiquez l’acte de manière protégée et vous finissez la nuit près l’un de l’autre, le lendemain matin il a disparu et vous n’avez plus aucun moyen de le contacter et au bout de quelques semaines une de vos copines vous appel en larme, elle vous annonce qu’elle a eu elle aussi un rapport mais cette fois-ci sans protection le lendemain de votre acte avec le barman et elle dit avoir obtenu la syphilis à cause de ce dernier, heureusement pour vous, vous êtes une personne responsable et vous avez acceptée de mettre la capote",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"end.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"end.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.1":{
+            "message": "Vous le repoussez et le giflez",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.1"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.1.1":{
+            "message": "Vous le repoussez et le giflez",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.2"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.1.2":{
+            "message": "NON MAIS TU FAIS QUOI LA !?,SORT DE CHEZ MOI TOUT DE SUITE !!!",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.3"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.1.3":{
+            "message": "Attends je voulais pas faire…",
+            "by":"2",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.1.10.1.13.1.4"
+                }
+            }
+        },
+        "2.2.1.1.10.1.13.1.4":{
+            "message": "Vous le dégagez de chez vous et vous n’entendez plus parler de lui après cette soirée, vous avez donc fait le choix d’abstinence et vous n’avez pris aucun risque",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"end.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"end.3"
+                }
+            }
+        },
+        "2.2.1.2":{
+            "message": "Vous patientez,seule sur votre chaise au bar ,vous regardez qui se est présent aux alentours et vous apercevez une femme, la trentaine qui se situe à l’autre bout du bar qui vous regarde de temps en temps,elle remarque que vous regarder dans sa direction et elle fait un signe vous indiquant de venir",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Aller vers elle",
+                    "to":"2.2.1.2.1"
+                },
+                "2":{
+                    "message": "Rentrez chez vous",
+                    "to":"2.2.1.2.2"
+                }
+            }
+        },
+        "2.2.1.2.2":{
+            "message": "Cela ne vous intéresse pas et cet soirée commence à vous fatiguer, par conséquent vous rentrez chez vous et ne pensez plus à cette soirée",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"end.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"end.4"
+                }
+            }
+        },
+        "2.2.1.2.1":{
+            "message": "Vous allez la voir, vous rougissez et vous vous installez à côté d’elle",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.1"
+                }
+            }
+        },
+        "2.2.1.2.1.1":{
+            "message": "E-Excusez moi vous vouliez me voir ?",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.2"
+                }
+            }
+        },
+        "2.2.1.2.1.2":{
+            "message": "J’ai remarqué que vous étiez seul donc je me suis dis que vous auriez besoin d’un peu de compagnie",
+            "by":"3",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.3"
+                }
+            }
+        },
+        "2.2.1.2.1.3":{
+            "message": "Vous avez bien raison cet endroit est ennuyant à mourir",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.4"
+                }
+            }
+        },
+        "2.2.1.2.1.4":{
+            "message": "Je vous le fais pas dire,enchantée je m’appelle (nom)",
+            "by":"3",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.5"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.5"
+                }
+            }
+        },
+        "2.2.1.2.1.5":{
+            "message": "Enchantée (nom), Seriez vous intéressée de venir chez moi ?",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.6"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.6"
+                }
+            }
+        },
+        "2.2.1.2.1.6":{
+            "message": "Eh bien ce serait avec plaisir",
+            "by":"3",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.7"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.7"
+                }
+            }
+        },
+        "2.2.1.2.1.7":{
+            "message": "Vous vous dirigez vers votre appartement",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.8"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.8"
+                }
+            }
+        },
+        "2.2.1.2.1.8":{
+            "message": "Magnifique appartement mais qu’en est il de la chambre ?",
+            "by":"narrator",
+            "time": "3",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.9"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.9"
+                }
+            }
+        },
+        "2.2.1.2.1.9":{
+            "message": "Mais c’est que vous êtes pressée",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.10"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.10"
+                }
+            }
+        },
+        "2.2.1.2.1.10":{
+            "message": "Pour vous oui…",
+            "by":"3",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.11"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.11"
+                }
+            }
+        },
+        "2.2.1.2.1.11":{
+            "message": "Allons y alors",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.12"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.2.1.2.1.12"
+                }
+            }
+        },
+        "2.2.1.2.1.12":{
+            "message": "Vous emmenez votre partenaire dans votre chambre et vous passez à l’acte dans le noir car elle disait avoir bcp d’insécurités… le lendemain elle vous révèle qu’elle a de l'herpès mais qu’elle avait trop honte pour vous l’annonce",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"end.5"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"end.5"
+                }
+            }
+        },
+        "2.1":{
+            "message": "Oh mais c’est que tu es encore plus beau de près que de loin mon chou",
+            "by":"4",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Rentrer dans son jeu",
+                    "to":"2.1.1"
+                },
+                "2":{
+                    "message": "Ignorer et commender un shot",
+                    "to":"2.1.2"
+                }
+            }
+        },
+        "2.1.2":{
+            "message": "Barman pouvez-vous me servir un shot de tequila s’il vous plaît ?",
+            "by":"1",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.1.2.1"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.1.2.1"
+                }
+            }
+        },
+        "2.1.2.1":{
+            "message": "Bien Sûr ça arrive tout de suite monsieur",
+            "by":"4",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.1.2.2"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.1.2.2"
+                }
+            }
+        },
+        "2.1.2.2":{
+            "message": "La Barman vous sert un shot tout en maintenant un eye contact avec vous",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.1.2.3"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.1.2.3"
+                }
+            }
+        },
+        "2.1.2.3":{
+            "message": "Tenez Monsieur voici votre shot",
+            "by":"4",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.1.2.4"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.1.2.4"
+                }
+            }
+        },
+        "2.1.2.4":{
+            "message": "Vous prenez votre verre et le buvez cul sec",
+            "by":"narrator",
+            "time": "1",
+            "choix":{
+                "1": {
+                    "message": "Continuer",
+                    "to":"2.1.2.5"
+                },
+                "2":{
+                    "message": "Continuer",
+                    "to":"2.1.2.5"
+                }
+            }
+        },
+    "2.1.2.5":{
+        "message": "Ah ça fait du bien",
+        "by":"1",
+        "time": "1",
+        "choix":{
+            "1": {
+                "message": "Continuer",
+                "to":"2.1.2.6"
+            },
+            "2":{
+                "message": "Continuer",
+                "to":"2.1.2.6"
+            }
         }
+    },
+    "2.1.2.6":{
+        "message": "Dites moi monsieur que fait un si bel homme telle que vous tout seul dans un endroit pareil ?",
+        "by":"4",
+        "time": "1",
+        "choix":{
+            "1": {
+                "message": "Continuer",
+                "to":"2.1.2.7"
+            },
+            "2":{
+                "message": "Continuer",
+                "to":"2.1.2.7"
+            }
+        }
+    },
+    "2.1.2.7":{
+        "message": "Oh mais je ne suis pas seul, mes amis sont sur la piste de danse c’est eux qui m’ont amenés ici",
+        "by":"1",
+        "time": "1",
+        "choix":{
+            "1": {
+                "message": "Continuer",
+                "to":"2.1.2.8"
+            },
+            "2":{
+                "message": "Continuer",
+                "to":"2.1.2.8"
+            }
+        }
+    },
+    "2.1.2.8":{
+        "message": "“Mais qu’attendez vous pour les rejoindre alors ?",
+        "by":"4",
+        "time": "1",
+        "choix":{
+            "1": {
+                "message": "Continuer",
+                "to":"2.1.2.9"
+            },
+            "2":{
+                "message": "Continuer",
+                "to":"2.1.2.9"
+            }
+        }
+        
+    }
+        
+        
+        
+
+
         
     }
 }
