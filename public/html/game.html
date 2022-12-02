@@ -1,13 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!Win Game</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-
   <body>
     <canvas id="canvas"></canvas>
+    <div id="menu_container">
+      <button id="start-button" onclick="closeMenu()">Start</button>
+    </div>
     <div id="game_container">
-      <div id="msg_container">
+      <div class="conv-img_container">
+        <img class="conv-img" />
       </div>
+      <div id="msg_container"></div>
 
       <div id="buttons">
         <button id="left_btn" class="answer_button">
@@ -17,7 +26,7 @@
             id="keyboard_left_arrow"
             class="keyboard_arrows"
           />
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Commencer</p>
         </button>
         <button id="right_btn" class="answer_button">
           <img
@@ -26,12 +35,22 @@
             id="keyboard_right_arrow"
             class="keyboard_arrows"
           />
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Commencer</p>
         </button>
       </div>
     </div>
 
+    <div id="end_container">
+      <h1>En savoir plus</h1>
+      <!-- TODO Implémenter l'open data ici ↓ -->
+      <img src="" alt="Stats open data" />
+      <p>Définition OPENAI</p>
+
+      <a href="https://www.sida-info-service.org/">Sida Info Service</a>
+      <a href="https://www.sexualites-info-sante.fr/">Sexualités Info Santé</a>
+    </div>
+
     <script src="../js/bg-canvas.js" defer></script>
-    <script src="../js/index.js" defer></script>
   </body>
+  <script src="js/test.js"></script>
 </html>
