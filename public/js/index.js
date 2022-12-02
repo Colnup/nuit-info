@@ -1,5 +1,7 @@
 let anim;
 
+let ending = 0
+
 let npc = {}
 
 
