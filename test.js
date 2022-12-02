@@ -10,7 +10,7 @@ const port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '/public/html/game.html'));
+    res.sendFile(path.join(__dirname, '/text.html'));
 })
 
 app.get('/api/name/female', function(req, res){

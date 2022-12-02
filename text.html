@@ -11,15 +11,37 @@
     <div id="menu_container">
       <button id="start-button" onclick="closeMenu()">Start</button>
     </div>
-    <main id="game_container">
-      <div class="conv" <div class="conv-img_container">
-        <img class="conv-img" />
+    <div id="game_container">
+        <div class="conv-img_container">
+            <img class="conv-img"/>
+        </div>
+        <div id="msg_container">
+
+        </div>
+        
+      <div id="buttons">
+        <button id="left_btn" class="answer_button">
+          <img
+            src="../data/img/left_arrow.png"
+            alt="keyboard left arrow"
+            id="keyboard_left_arrow"
+            class="keyboard_arrows"
+          />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </button>
+        <button id="right_btn" class="answer_button">
+          <img
+            src="../data/img/right_arrow.png"
+            alt="keyboard right arrow"
+            id="keyboard_right_arrow"
+            class="keyboard_arrows"
+          />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </button>
       </div>
-      <div id="conv-text_container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam sunt aut ratione quo aperiam eum harum
-        officia, non architecto voluptatum quidem magni, quos eaque praesentium ipsa doloremque aliquid asperiores.
-      </div>
-    </main>
-  </body>
-  <script src="js/test.js"></script>
+    </div>
+    </div>
+    
+</body>
+<script src="js/test.js"></script>
 </html>
