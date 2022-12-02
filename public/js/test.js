@@ -180,5 +180,6 @@ function animateHideMenu(element){
 
 
 function start(){
+    
     getMessage(1, sendMessage)
 }

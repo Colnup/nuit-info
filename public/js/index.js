@@ -2,9 +2,20 @@ let anim;
 
 let npc = {}
 
+
+// the actual 'trigger' function
+const trigger = (el, etype, custom) => {
+    const evt = custom ?? new Event( etype, { bubbles: true } );
+    el.dispatchEvent( evt );
+  };
+
 initNameNPC(start);
 
 // Fonction récup user (PNJ)
+
+function scrollToBottom(element){
+    element.scrollTop = element.scrollHeight;
+}
 
 /**
  * 
@@ -86,8 +97,6 @@ function sendMessage(json){
 
     msg_container.appendChild(container_message);
 
-    console.log(json)
-
     if(json['by'] == "narrator"){
         // C'est une action / ignorer la récup du nom et la mise en couleur du texte
         message_image.remove();
@@ -101,9 +110,12 @@ function sendMessage(json){
 
         let by = json['by']
 
-        content_author.textContent = npc[by]['name']? npc[by]['name'] : "[ERREUR DANS LE BY = "+by+"]";
-        console.log(npc[by])
-        content_text.style.color = npc[by]['color']? ""+npc[by]['color'] : "[ERREUR DANS LE BY = "+by+"]";
+        if(by != "1"){
+            content_author.textContent = npc[by]['name']? npc[by]['name'] : "[ERREUR DANS LE BY = "+by+"]";
+        } else {
+            content_author.textContent = "Moi"
+        }
+        content_author.style.color = npc[by]['color']? ""+npc[by]['color'] : "[ERREUR DANS LE BY = "+by+"]";
         content_text.textContent = json['message'].replace('(nom)', npc[by]['name']);
     }
 
@@ -127,10 +139,19 @@ function setChoice(json){
     
     left.replaceWith(left_clone);
     right.replaceWith(right_clone);
+    scrollToBottom(document.getElementById('msg_container'))
+
+    window.data = json;
 
 }
 
 function choice(json, id){
+
+    if(json['choix'][id]['to'].contains('end')){
+        end(json['choix'][id]['to']);
+        return;
+    }
+
     let element = getMessage(json['choix'][id]['to'], sendMessage)
 }
 
@@ -143,7 +164,6 @@ function closeMenu(){
     let menuContainer = document.getElementById('menu_container');
     let gameContainer = document.getElementById('game_container');
 
-    console.log("anim")
     document.getElementById('menu_container').style.opacity = '1.0'
 
     anim = setInterval(animateHideMenu, 40, menuContainer);
@@ -157,14 +177,12 @@ function closeMenu(){
 
 function animateHideMenu(element){
 
-    console.log(document.getElementById('menu_container').style.opacity)
 
     if(document.getElementById('menu_container').style.opacity <= '0.0'){
         element.style.display = 'none';
         clearInterval(anim)
     } else {
         let opacity = parseFloat(document.getElementById('menu_container').style.opacity)
-        console.log("anim")
         opacity=(opacity - 0.1)
 
         document.getElementById('menu_container').style.opacity = opacity;
@@ -172,7 +190,38 @@ function animateHideMenu(element){
 
 }
 
+function animateHideGame(element){
+
+    if(document.getElementById('game_container').style.opacity <= '0.0'){
+        element.style.display = 'none';
+        clearInterval(anim)
+    } else {
+        let opacity = parseFloat(document.getElementById('game_container').style.opacity)
+        opacity=(opacity - 0.1)
+
+        document.getElementById('game_container').style.opacity = opacity;
+    }
+}
+
 
 function start(){
     getMessage(1, sendMessage)
+
+    window.addEventListener('keydown', function (e) {
+
+        if(e.key == "ArrowLeft"){
+            choice(e.currentTarget.data, "1")
+        }
+
+        if(e.key == "ArrowRight"){
+            choice(e.currentTarget.data, "2")
+        }
+      }, false);
+
+}
+
+function end(){
+    let gameContainer = document.getElementById('game_container');
+    
+    anim = setInterval(animateHideGame, 40, gameContainer);
 }
