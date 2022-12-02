@@ -6,7 +6,10 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: green;
+}
+
+body {
+  background-color: #3e3e3e;
 }
 
 #menu_container {

@@ -11,8 +11,8 @@
     ],
     "path":{
         "1":{
-            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
-            "by":"1",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula. (nom)",
+            "by":"0",
             "time": "1",
             "choix":{
                 "1": {
@@ -27,7 +27,7 @@
         },
         "2":{
             "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula.",
-            "by":"2",
+            "by":"1",
             "time": "1",
             "choix":{
                 "1": {
@@ -47,7 +47,7 @@
             "choix":{
                 "1": {
                     "message": "Continuer",
-                    "to":"5"
+                    "to":"1"
                 },
                 "2":{
                     "message": "Continuer",

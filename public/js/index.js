@@ -2,9 +2,6 @@ let anim;
 
 let npc = {}
 
-
-
-
 initNameNPC(start);
 
 // Fonction récup user (PNJ)
@@ -51,7 +48,6 @@ function initNameNPC(start){
                             npc[index]['color'] = json['npc'][index]['color'];
                         });
                 }
-                console.log(index)
                 if(index == data.length-1){
                     start();
                 }
@@ -104,8 +100,6 @@ function sendMessage(json){
         message_image.alt = "Image";
 
         let by = json['by']
-
-        console.log(npc)
 
         content_author.textContent = npc[by]['name']? npc[by]['name'] : "[ERREUR DANS LE BY = "+by+"]";
         console.log(npc[by])

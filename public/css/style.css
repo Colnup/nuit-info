@@ -75,8 +75,9 @@ canvas {
   display: grid;
   grid-template-columns: 1fr;
 
-  overflow-y: scroll;
+  overflow-y: scroll; 
 
+  height: 90vh;
   padding: 30px;
   margin-bottom: 50px;
   border-radius: 15px;
