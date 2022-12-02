@@ -1,15 +1,12 @@
+
+
 let anim;
 
 let ending = 0
 
 let npc = {}
 
-
-// the actual 'trigger' function
-const trigger = (el, etype, custom) => {
-    const evt = custom ?? new Event( etype, { bubbles: true } );
-    el.dispatchEvent( evt );
-  };
+let def = ['VIH', 'SIDA', 'IST']
 
 initNameNPC(start);
 
@@ -149,9 +146,9 @@ function setChoice(json){
 
 function choice(json, id){
 
+    end(json['choix'][id]['to']);
+    return;
     if(json['choix'][id]['to'].contains('end')){
-        end(json['choix'][id]['to']);
-        return;
     }
 
     let element = getMessage(json['choix'][id]['to'], sendMessage)
@@ -195,6 +192,10 @@ function animateHideMenu(element){
 function animateHideGame(element){
 
     if(document.getElementById('game_container').style.opacity <= '0.0'){
+        document.getElementById('end_container').style.display = 'flex'
+        document.body.style.display = "flex"
+        document.body.style.justifyContent = "end"
+        document.body.style.alignItems = "center"
         element.style.display = 'none';
         clearInterval(anim)
     } else {
@@ -224,6 +225,30 @@ function start(){
 
 function end(){
     let gameContainer = document.getElementById('game_container');
-    
+    document.getElementById('game_container').style.opacity = 1.0
     anim = setInterval(animateHideGame, 40, gameContainer);
+
+
+    let openDataText = document.getElementById('open-data');
+    let openAIText = document.getElementById('openai');
+
+    let random = Math.floor(Math.random()*10)
+
+    let randomDef = Math.floor(Math.random()*3)
+
+    fetch("https://opendata.paris.fr/api/records/1.0/search/?dataset=laboratoires-danalyses-medicales")
+    .then((response) => response.json())
+    .then((data) => {
+
+        console.log(data['records'][random]['fields']['laboratoire'])
+
+        openDataText.innerHTML = "Le saviez vous ?<br/>Le laboratoire "+data['records'][random]['fields']['laboratoire']+" qui est ouvert "+data['records'][random]['fields']['horaires'].toLowerCase()+" fait des tests de dépistage gratuitement !<br/><br/>"
+
+    });
+    fetch('api/def/'+def[randomDef])
+        .then((response) => response.json())
+        .then((_json) => {
+            openAIText.innerText=_json['def']
+        });
+
 }
