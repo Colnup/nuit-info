@@ -1,12 +1,32 @@
 {
+    "end":{
+        "end.1":{
+            "message": "syphilis"
+        },
+        "end.2":{
+            "message": "Safe"
+        },
+        "end.3":{
+            "message": "abstinence"
+        },
+        "end.4":{
+            "message": "herpes"
+        },
+        "end.5":{
+            "message": "gonorrhée"
+        },
+        "end.6":{
+            "message": "VIH"
+        }
+    },
     "npc":[
         {
             "color": "#9ab560",
-            "gender": "Female"
+            "gender": "Male"
         },
         {
             "color": "#3297a8",
-            "gender": "Male"
+            "gender": "Female"
         },
         {
             "color": "#b5a408",
@@ -14,23 +34,11 @@
         },
         {
             "color": "#7d2d7d",
-            "gender": "Male"
+            "gender": "Female"
         },
         {
             "color": "#c1013d",
-            "gender": "Male"
-        },
-        {
-            "color": "#942cc4",
-            "gender": "Male"
-        },
-        {
-            "color": "#4a40d8",
-            "gender": "Male"
-        },
-        {
-            "color": "#c3d734",
-            "gender": "Male"
+            "gender": "Female"
         }
     ],
     "path":{
@@ -1452,11 +1460,11 @@
         "choix":{
             "1": {
                 "message": "Continuer",
-                "to":"end.6"
+                "to":"end.1"
             },
             "2":{
                 "message": "Continuer",
-                "to":"end.6"
+                "to":"end.1"
             }
         } 
     },
@@ -1497,11 +1505,11 @@
         "choix":{
             "1": {
                 "message": "Continuer",
-                "to":"end.7"
+                "to":"end.2"
             },
             "2":{
                 "message": "Continuer",
-                "to":"end.7"
+                "to":"end.2"
             }
         } 
     },
@@ -1782,11 +1790,11 @@
         "choix":{
             "1": {
                 "message": "Continuer",
-                "to":"end.8"
+                "to":"end.6"
             },
             "2":{
                 "message": "Continuer",
-                "to":"end.8"
+                "to":"end.6"
             }
         }
     }
