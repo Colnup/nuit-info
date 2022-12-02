@@ -2,8 +2,6 @@
 
 let anim;
 
-let ending = 0
-
 let npc = {}
 
 let def = ['VIH', 'SIDA', 'IST']
