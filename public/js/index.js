@@ -146,9 +146,11 @@ function setChoice(json){
 
 function choice(json, id){
 
-    end(json['choix'][id]['to']);
-    return;
-    if(json['choix'][id]['to'].contains('end')){
+    let to = json['choix'][id]['to'] + ""
+
+    if(to.includes('end')){
+        end(json['choix'][id]['to']);
+        return;
     }
 
     let element = getMessage(json['choix'][id]['to'], sendMessage)
