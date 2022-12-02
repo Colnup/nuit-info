@@ -16,7 +16,7 @@ On a débuté notre réflexion en se demandant quel genre de jeu pourrait être 
 
 Comme vous aurez certainement pu tester, nous avons choisi l'approche 2 : on s'est dit que garder l'utilisateur impliqué dans le jeu était plus important que de lui faire passer un message, car si il quitte tout de suite la page, le message ne sera jamais passé de toute façon.
 
-Le vrai challenge était de trouver un moyen de faire passer un message sans que cela soit trop lourd pour l'utilisateur. Nous avons donc décidé de faire un jeu avec des histoires courtes, et de faire passer le message à travers des dialogues entre les personnages.
+Le vrai challenge était de trouver un moyen de faire passer un message sans que cela soit trop lourd pour l'utilisateur. Nous avons donc décidé de faire un jeu avec des histoires courtes, et de faire passer le message à travers des dialogues entre les personnages. A partir de là, nous nous sommes dis qu'implémenter un personnage LGBTQI+ serait une bonne idée, car cela permettrait de faire passer le message de manière plus subtile, et de manière plus intéressante pour l'utilisateur.
 
 ## L'intégration des sponsors
 
