@@ -75,7 +75,7 @@ canvas {
   grid-template-columns: 1fr;
 
   /* align on the bottom */
-  align-items: flex-end;
+  align-items: end;
 
   overflow-y: scroll;
 
@@ -224,8 +224,16 @@ span.nom {
 
   /* display: none; */
 
-  margin-top: 20px;
   width: 70vw;
-  height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
+
   background-color: greenyellow;
+
+  border-radius: 15px 15px 0 0;
 }
