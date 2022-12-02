@@ -14,7 +14,7 @@ On a débuté notre réflexion en se demandant quel genre de jeu pourrait être 
 
 ## Notre solution
 
-Comme vous aurez certainement pu tester, nous avons choisi l'approche 2 : on s'est dit que garder l'utilisateur impliqué dans le jeu était plus important que de lui faire passer un message, car si il quitte tout de suite la page, le message ne serait jamais passé dans tous les cas.
+Comme vous aurez certainement pu tester, nous avons choisi l'approche 2 : on s'est dit que garder l'utilisateur impliqué dans le jeu était plus important que de lui faire passer un message, car si il quitte tout de suite la page, le message ne sera jamais passé de toute façon.
 
 Le vrai challenge était de trouver un moyen de faire passer un message sans que cela soit trop lourd pour l'utilisateur. Nous avons donc décidé de faire un jeu avec des histoires courtes, et de faire passer le message à travers des dialogues entre les personnages.
 
@@ -45,8 +45,8 @@ Nous avons passé un très bon moment à développer ce jeu, et nous espérons q
 
 En bref, cette nuit blanche a été très enrichissante, et malgré le fait que nous avons eu quelques difficultés, nous sommes très fiers du résultat final.
 
-Bon jeu !
-
 ## Remerciements
 
-Nous tenons à remercier l'ensemble de l'équipe de la nuit de l'info, ainsi que les sponsors pour nous avoir permis de développer ce jeu. Nous remercions particulièrement M. Synave qui nous sauvé la mise sur une grosse erreur de notre part. Enfin, merci à vous de nous avoir lu jusqu'ici, et nous espérons que vous apprécierez notre jeu !
+Nous tenons à remercier l'ensemble de l'équipe de la nuit de l'info, ainsi que les sponsors pour nous avoir permis de développer ce jeu. Nous remercions particulièrement M. Synave qui nous sauvé la mise sur une grosse erreur de notre part. Enfin, merci à vous de nous avoir lu jusqu'ici !
+
+Bon jeu !
